@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=Arona Theme
+Description=Blue Archive Theme for SDDM
+Author=Djxs4n
+Copyright=Copyright (C) 2025 Djxs4n
+License=GPL-3.0-or-later
+Type=sddm-theme
+Version=1.0
+Website=''
+Screenshot=Previews/PartialBlur.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=arona-theme
+Theme-API=2.11
