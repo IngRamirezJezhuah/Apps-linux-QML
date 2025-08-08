@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
-    QQmlApplicationEngine engine;
+    QQmlApplicationEngine motorQML;
     const QUrl url(QStringLiteral("qrc:/proyecto-1-1/Main.qml"));
     QObject::connect(
         &engine,
@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
         &app,
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
-    engine.load(url);
+    motorQML.load(QUrl(QStringLiteral("qrc:/proyecto-1-1/Main.qml")));
 
     return app.exec();
 }
