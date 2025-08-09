@@ -1,0 +1,62 @@
+import QtQuick 2.15
+import QtQuick.Window 2.15
+import QtQuick.Controls 2.15
+
+Window {
+    width: 640
+    height: 480
+    visible: true
+    title: qsTr("Hello World")
+    
+    Rectangle {
+        id: principal
+        //width: 10
+        //height: 10
+        width: parent.width * 0.8
+        height: parent.height * 0.5
+        color: "#515151"
+    }
+    
+
+    Button{
+        //anchors.left: principal.left
+        //anchors.top: principal.top
+        //anchors.right: principal.right
+        //anchors.bottom: principal.bottom
+        text:"clickeame!"
+        onClicked: console.log("restando")
+    }
+
+    Rectangle {
+        anchors.top: principal
+        anchors.bottom: principal.bottom 
+        anchors.centerIn: principal
+        width: principal.width * 0.8/*400*/
+        height: 300
+        color: "lightgrey"
+
+        Rectangle {
+            id: sidebar;width: 100;height: parent.height;color: "#8e5a5a"; anchors.left: parent.left;
+        }
+
+        Rectangle {
+            id: contentArea;anchors.left: sidebar.right;anchors.right: parent.right
+            height: parent.height;color: "#f3eeee"
+            
+            Rectangle {
+            
+                anchors.centerIn: parent
+                //width: 10 height: 10
+                width: parent.width * 0.8;height: parent.height * 0.5
+                color: "#8cf259"
+                
+                Text {
+
+                    id: name
+                    text: qsTr("Hola qml")
+                }
+            }
+        }
+    }
+}
+
