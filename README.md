@@ -14,6 +14,13 @@ $ git clone https://example.com
 $ cd ../path/to/the/file
 $ find the main.cpp
 $ run or dowloand
+
+Algo a tener a considerar es que necesitas
+haber instalado qml para que esto funcione y se ejecute correctamente
+si estas en linux es tan faci como descargar el instalador
+en la pagina y agregar la variable de enorno en tu archivo
+de configuraciones generales, si no lo tienes te va a dar error
+asi que mucho ojo.
 ```
 
 ### The ejecutation
@@ -21,7 +28,8 @@ $ run or dowloand
 $ git clone https://example.com
 $ cd ../path/to/the/file
 $ Move to path where are the Main.qml
-$ write qmlscene Main.qmlin erminal
+$ write qmlscene Main.qmlin on the terminal
+$ you can use the debugger also
 ```
 > if you made rigth the steps you can watch the preview of the proyects
 
